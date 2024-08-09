@@ -1,5 +1,6 @@
 webenv/
 env
 website/__pycache__/
+main/__pycache__/
 static/admin/
 *.pyc
