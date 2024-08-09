@@ -1,3 +1,4 @@
 webenv/
 env
 static/admin/
+*.pyc
