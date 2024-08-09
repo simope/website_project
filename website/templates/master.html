@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/master_style.css' %}">
+  <link rel="shortcut icon" href="{%  static 'images/favicon.ico' %}">
+</head>
+<body >
+
+<ul class="topnav">
+  <li><a href="/">HOME</a></li>
+  <li><a href="/game/play">GAME</a></li>
+  <li><a href="/game/stats">STATS</a></li>
+</ul>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>
