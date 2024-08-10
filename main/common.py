@@ -9,7 +9,7 @@ def extractIPandLocation(ip):
     ip_list = Player.objects.values_list('IP', flat=True)
 
     # Extract IP and locate user
-    ip = "92.109.61.185" # Remove if online
+    ip = "92.109.61.185" # Remove this line if online
 
     if not(ip in ip_list):
         # Extract data through API

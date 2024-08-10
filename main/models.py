@@ -7,8 +7,12 @@ class Player(models.Model):
     latitude = models.FloatField()
     points = models.PositiveSmallIntegerField()
     longitude = models.FloatField()
+    
+    def __str__(self):
+        return f"{self.IP}"
 
 class Game(models.Model):
-    played_at = models.DateTimeField(auto_now_add=True)
     result = models.CharField(max_length=10)
-    player = models.ForeignKey(Player, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"{self.result}"
