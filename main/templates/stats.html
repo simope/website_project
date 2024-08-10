@@ -1,0 +1,38 @@
+{% extends "master.html" %}
+{% load static %}
+
+{% block title %}
+My website
+{% endblock %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/stats_style.css' %}">
+
+
+<div class="wrapper">
+    <br>
+    <div class="total-played">
+        RPS has been played {{total}} times.
+    </div>
+
+    <br>
+    <hr>
+    <br>
+    
+    <div class="bar-chart">
+        Global statistics
+        {{chart|safe}}
+    </div>
+    
+    <br>
+    <hr>
+    <br>
+    
+    <div class="users-map">
+        Visitors positions
+        {{map|safe}}
+    </div>
+</div>
+
+{% endblock %}

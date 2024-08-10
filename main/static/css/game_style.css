@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Ubuntu'), url(http://example.com/fonts/ubuntu.woff) format('woff');
+  }
+  
+  hr {
+    width: 700px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .wrapper{
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    max-width: 900px;
+    min-width: 600px;
+  }
+  
+  .pagetitle{
+    font-size: 20px;
+    grid-area: 1 / 2 / 2 / 9;
+  }
+  
+  .input{
+    display: grid;
+    align-items: left;
+    justify-content: space-around;
+  }
+  
+  .hand-selection-1{
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  
+  .hand-selection-2{
+    grid-area: 4 / 2 / 5 / 3;
+  }
+  
+  .hand-selection-3{
+    grid-area: 6 / 2 / 7 / 3;
+  }
+  
+  .hand-selection-1 img{
+    width: 100px;
+    height: 100px;
+    opacity: 0.3;
+  }
+  .hand-selection-2 img{
+    width: 100px;
+    height: 100px;
+    opacity: 0.3;
+  }
+  .hand-selection-3 img{
+    width: 100px;
+    height: 100px;
+    opacity: 0.3;
+  }
+  
+  .hand-selection-1 img:hover{
+    opacity: 1 !important; /* I need to put important otherwise JS overrides this */
+  }
+  .hand-selection-2 img:hover{
+    opacity: 1 !important; /* I need to put important otherwise JS overrides this */
+  }
+  .hand-selection-3 img:hover{
+    opacity: 1 !important; /* I need to put important otherwise JS overrides this */
+  }
+  
+  .playersHand, .computersHand{
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    align-self: center;
+    border: 1px solid;
+  }
+  
+  .playersHand{
+    /* background-color: rgb(220, 255, 220); */
+    grid-area: 3 / 4 / 6 / 6;
+  }
+  
+  .computersHand{
+    /* background-color: rgb(255, 220, 220); */
+    grid-area: 3 / 7 / 6 / 9;
+  }
+  
+  #playersHandImg, #computersHandImg{
+    width: 200px;
+    height: 200px;
+  }
+  
+  #gameText{
+    grid-area: 6 / 4 / 7 / 9;
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .bar-chart{
+    margin: auto;
+    width: 700px;
+    max-width: 900px;
+    min-width: 600px;
+    height: 400px;
+  }
+  
+  .total-played{
+    font-size: 40px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .users-map{
+    font-size: 40px;
+    text-align: center;
+    margin: auto;
+    width: 700px;
+    max-width: 900px;
+    min-width: 600px;
+    height: 400px;
+    margin-bottom: 100px;
+  }

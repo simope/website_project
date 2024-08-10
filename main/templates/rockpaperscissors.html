@@ -1,0 +1,46 @@
+{% extends "master.html" %}
+{% load static %}
+
+{% block title %}
+My website
+{% endblock %}
+
+{% block content %}
+<script>
+    var rock = "{% static 'images/rock.png' %}";
+    var paper = "{% static 'images/paper.png' %}";
+    var scissors = "{% static 'images/scissors.png' %}";
+</script>
+<script src="{% static 'javascript/myscript.js' %}"></script>
+<link rel="stylesheet" href="{% static 'css/game_style.css' %}">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<div class="wrapper">
+    <div class="pagetitle"><h1> Rock, paper, scissors </h1></div>
+
+        <div class="hand-selection-1">
+            <img id="rock" onclick="startGame('rock')" src="{% static 'images/rock.png' %}">
+        </div>
+        <div class="hand-selection-2">
+            <img id="paper" onclick="startGame('paper')" src="{% static 'images/paper.png' %}">
+        </div>
+        <div class="hand-selection-3">
+            <img id="scissors" onclick="startGame('scissors')" src="{% static 'images/scissors.png' %}">
+        </div>
+
+
+    <div class="playersHand">
+            <img id="playersHandImg">
+            YOUR HAND
+    </div>
+
+    <div class="computersHand">
+            <img id="computersHandImg">
+            COMPUTER'S HAND
+    </div>
+
+    <div id="gameText">
+    </div>
+</div>
+<br>
+{% endblock %}
